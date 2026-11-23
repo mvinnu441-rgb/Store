@@ -85,7 +85,7 @@ if os.path.exists(env_file_path):
 # ================= BASE CONFIGURATIONS (STRICTLY FROM .ENV) =================
 API_ID = int(os.getenv("TELEGRAM_API_ID", os.getenv("API_ID", "30758940")))
 API_HASH = os.getenv("TELEGRAM_API_HASH", os.getenv("API_HASH", "3f7cc244b36e796af492929e94019d06")).strip()
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", os.getenv("BOT_TOKEN", "8604146843:AAEICyj41ZaoR8lu3f4OdJu1rej3A3jaFdw")).strip()
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", os.getenv("BOT_TOKEN", "9024828303:AAHFEK_k_ncuCRw__cRyNnpIAYmSxRUwOe0")).strip()
 ADMIN_ID = int(os.getenv("ADMIN_ID", "8828377643"))
 ADMIN_IDS = [int(x.strip()) for x in os.getenv("ADMIN_IDS", "").split(",") if x.strip() and x.strip().lstrip("-").isdigit()]
 if ADMIN_ID and ADMIN_ID not in ADMIN_IDS:
