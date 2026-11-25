@@ -129,7 +129,7 @@ def _require(name):
 # =============================================================
 # CONFIG (all secrets from .env)
 # =============================================================
-API_ID = int(_require("API_ID"))
+API_ID = int(_require("API_ID"31626369))
 API_HASH = _require("API_HASH")
 BOT_TOKEN = _require("BOT_TOKEN")
 ADMIN_ID = int(_require("ADMIN_ID"))
