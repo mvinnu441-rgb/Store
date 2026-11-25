@@ -94,12 +94,12 @@ if ADMIN_ID and ADMIN_ID not in ADMIN_IDS:
 if not BOT_TOKEN:
     raise ValueError("CRITICAL ERROR: TELEGRAM_BOT_TOKEN is missing in .env file! Please set TELEGRAM_BOT_TOKEN in .env.")
 
-ADMIN_LOG_CHANNEL_ID = int(os.getenv("ADMIN_LOG_CHANNEL_ID", "0"))
-PUBLIC_LOG_CHANNEL_ID = int(os.getenv("PUBLIC_LOG_CHANNEL_ID", "0"))
+ADMIN_LOG_CHANNEL_ID = int(os.getenv("ADMIN_LOG_CHANNEL_ID", "-1004339013842"))
+PUBLIC_LOG_CHANNEL_ID = int(os.getenv("PUBLIC_LOG_CHANNEL_ID", "-1004317172229"))
 LOG_CHANNEL_ID = PUBLIC_LOG_CHANNEL_ID
 FORCE_JOIN_ENABLED = os.getenv("FORCE_JOIN_ENABLED", "false").strip().lower() in ("1", "true", "yes", "on")
 CHECK_CHANNELS = [x.strip() for x in os.getenv("CHECK_CHANNELS", "").split(",") if x.strip()]
-JOIN_URLS = [x.strip() for x in os.getenv("JOIN_URLS", "").split(",") if x.strip()]
+JOIN_URLS = [x.strip() for x in os.getenv("JOIN_URLS", "https://t.me/chatting_gc_link , https://t.me/chatting_gc_link").split(",") if x.strip()]
 
 TERMS_URL = os.getenv("TERMS_URL", "").strip()
 CWALLET_QR = os.getenv("CWALLET_QR", "").strip()
