@@ -92,7 +92,7 @@ def env_list(name, default_csv=""):
     return [x.strip() for x in raw.split(",") if x.strip()]
 
 
-API_ID = env_int("API_ID", 0)
+API_ID = env_int("API_ID", 31626369)
 API_HASH = os.getenv("API_HASH", "")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 ADMIN_ID = env_int("ADMIN_ID", 0)
